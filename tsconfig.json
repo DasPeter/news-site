@@ -3,6 +3,7 @@
 	"exclude": ["src/scripts/**/*spec.ts"],
 	"compilerOptions": {
 		"outDir": "scripts",
-		"target": "es6"
+		"target": "es6",
+		"moduleResolution": "node"
 	}
 }
