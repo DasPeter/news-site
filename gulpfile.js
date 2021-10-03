@@ -7,7 +7,7 @@ gulp.task("scripts", function () {
 	const tsConfig = tsc.createProject("tsconfig.json"); // Read TS config file
 	return tsConfig
 		.src()
-		.pipe(tsc()) // Compile with TS
+		.pipe(tsConfig()) // Compile with TS
 		.pipe(gulp.dest("assets/scripts")); // Destination folder
 });
 
@@ -32,7 +32,7 @@ gulp.task(
 	"styles:watch",
 	gulp.series("styles", function (done) {
 		// Escuchar cambios
-		gulp.watch("src/styles/**/*.ts", gulp.series("styles"));
+		gulp.watch("src/styles/**/*.scss", gulp.series("styles"));
 		done();
 	})
 );

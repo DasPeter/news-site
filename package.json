@@ -9,10 +9,10 @@
 		"scripts": "gulp scripts",
 		"scripts:watch": "gulp scripts:watch",
 		"styles:watch": "gulp styles:watch",
-    "serve": "gulp serve",
+		"serve": "gulp serve",
 		"build": "gulp"
 	},
-	"author": "",
+	"author": "Pedro García Romero",
 	"license": "ISC",
 	"devDependencies": {
 		"gulp": "^4.0.2",
