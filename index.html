@@ -16,7 +16,7 @@
 					type="text"
 					placeholder="Search for a specific topic"
 				/>
-				<button id="search-button">🔍</button>
+				<button id="search-button" class="button-secondary">🔍</button>
 			</div>
 		</header>
 		<div class="container">
@@ -28,8 +28,8 @@
 		<script src="assets/scripts/main.js" type="module"></script>
 		<script id="news-template" type="text/x-handlebars-template">
 			{{#each news}}
-				<div class="news-item col-2">
-					<img src="{{urlToImage}}" />
+				<div class="article col-2">
+					<img class="picture" src="{{urlToImage}}" />
 					<h2>{{title}}</h2>
 					<p>{{description}}</p>
 					<a href="{{url}}" target="_blank">Ver más</a>

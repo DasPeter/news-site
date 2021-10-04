@@ -32,7 +32,7 @@ gulp.task(
 	"styles:watch",
 	gulp.series("styles", function (done) {
 		// Escuchar cambios
-		gulp.watch("src/styles/**/*.scss", gulp.series("styles"));
+		gulp.watch("src/sass/**/*.scss", gulp.series("styles"));
 		done();
 	})
 );
