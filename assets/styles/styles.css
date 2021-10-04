@@ -1,8 +1,3 @@
-h1 {
-  color: red;
-  text-align: center;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -10,14 +5,15 @@ html, body {
 
 header {
   width: 100%;
-  height: 80px;
-  background-color: coral;
-  color: #fff;
+  background-color: #f33333;
+  padding: 10px;
 }
 header h1 {
   margin: 0;
-  line-height: 80px;
   padding: 0 12px;
+}
+header div {
+  text-align: center;
 }
 
 .container {
@@ -31,7 +27,7 @@ header h1 {
 }
 
 .grid > div[class*=col-] {
-  padding: 10px 20px;
+  padding: 5%;
   float: left;
   min-height: 1px;
 }
@@ -92,7 +88,13 @@ header h1 {
   }
 }
 a {
-  color: coral;
+  color: #f33333;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 .button, .button-secondary, .button-primary {
@@ -102,11 +104,11 @@ a {
 }
 
 .button-primary {
-  background-color: coral;
+  background-color: #f33333;
   color: white;
 }
 
 .button-secondary {
-  background-color: purple;
+  background-color: #0099ff;
   color: white;
 }

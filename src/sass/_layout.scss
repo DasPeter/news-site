@@ -7,14 +7,16 @@ html, body {
 
 header {
     width: 100%;
-    height: 80px;
-    background-color: coral;
-    color: #fff;
+    background-color: $primary-color;
+    padding: 10px;
 
     h1 {
         margin: 0;
-        line-height: 80px;
         padding: 0 12px;
+    }
+
+    div{
+        text-align: center;
     }
 }
 
