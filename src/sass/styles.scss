@@ -1,14 +1,15 @@
-h1 {
-	color: red;
-	text-align: center;
-}
-
 @import "variables";
 @import "layout";
 @import "grid";
 
 a {
 	color: $primary-color;
+}
+
+h1 {
+	color: $contrast-color;
+	text-align: center;
+    font-family: sans-serif;
 }
 
 .button {
