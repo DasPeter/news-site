@@ -1,61 +1,22 @@
-@use "sass:math";
+@import "variables";
 
-$max-cols: 12;
-$position: "top";
-$num-cols-list: 1, 2, 3, 4, 6, 8, 9, 12; 
-
-@function getWidth($cols) {
-    @return math.div($cols,$max-cols) * 100%;
-}
-
-.foo {
-    position: absolute;
-    #{$position}: 0;
+.container {
+	padding: 5%;
 }
 
 .grid {
-    > div[class*=col-] {
-        padding: 5%;
-        float: left;
-        min-height: 1px;
-    }
+	> div {
+		box-sizing: border-box;
+		float: left;
+		text-align: justify;
 
-    > .col-#{$max-cols} {
-        width: 100%;
-    }
-}
+		border: solid 1px $dark-color;
+		background-color: $secondary-color;
+	}
 
-@mixin tablet {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media screen and (min-width: 1024px) {
-        @content;
-    }
-}
-
-
-@include tablet {
-    .grid {
-        // arreglo.forEach(item => {})
-        @each $size in $num-cols-list {
-            > .col-md-#{$size} {
-                width: getWidth($size);
-            }
-        }
-    }
-}
-
-@include desktop {
-    .grid {
-        // arreglo.forEach(item => {})
-        @each $size in $num-cols-list {
-            > .col-lg-#{$size} {
-                width: getWidth($size);
-            }
-        }
-    }
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
