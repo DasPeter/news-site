@@ -5,7 +5,7 @@ export class News {
     }
     getQuery(query) {
         query = encodeURI(query);
-        const url = `https://newsapi.org/v2/top-headlines?q=${query}&country=us&apiKey=58f07f28dd7e4e3a8a25957a49dba980`;
+        const url = `https://newsapi.org/v2/everything?q=${query}&apiKey=58f07f28dd7e4e3a8a25957a49dba980`;
         return axios.get(url);
     }
 }
